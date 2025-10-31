@@ -51,10 +51,11 @@ h1 {
     height: 500px;
     padding-top: 20px;
     border: solid 3px white;
-    margin: auto;
+    margin:  20px auto;
     border-radius: 32px;
     align-items: center;
     background: linear-gradient(35deg, #A3277C, #3D0F2E) no-repeat;
+    box-shadow: 0 0 10px 5px black;
 
 }
 
@@ -68,10 +69,10 @@ input {
 
 h2 {
     color: white;
-    font-size: 41px;
+    font-size: 25px;
     font-weight: bold;
     background: none;
-    padding-left: 20px;
+    padding: 20px;
 }
 
 .answers {
@@ -94,6 +95,9 @@ h2 {
     cursor: pointer;
 
 }
+span{
+    background: none;
+}
 
 .botton {
     padding: 15px 73px;
@@ -104,9 +108,9 @@ h2 {
 
 .btn_ {
     padding: 15px;
-    width: 100px;
+    width: 120px;
     border: solid 2px white;
-    font-weight: bold;
+    font-size: 15px;
     border-radius: 12px;
     cursor: pointer;
     color: #fff;
