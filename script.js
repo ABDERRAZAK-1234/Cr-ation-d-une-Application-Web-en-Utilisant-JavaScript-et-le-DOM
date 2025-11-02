@@ -7,7 +7,7 @@ const Question = [
     "Berlin",
     "Rabat",
   ],
-  ["Combien font 9² ?", "11", "18", "81", "99"],
+  ["Combien font 9² ?", "11", "18", "81", "99", "81"],
   [
     "Quelle est la langue officielle de Allemagne ?",
     "Arabic",
@@ -30,11 +30,12 @@ const Question = [
     "29",
     "28",
     "31",
+    "28",
   ],
 ];
 
 let bonnes_rep = 0;
-let i = 0;
+let questionAct = 0;
 
 let bouton_prece = document.getElementById("btn_prec");
 let bouton_suivant = document.getElementById("btn_suiv");
@@ -45,16 +46,20 @@ document.querySelectorAll("span").forEach((element, index) => {
 });
 
 function myfunction() {
-  var i = 0;
-  var j = 0;
-  if (j == 0) {
+  if (questionAct == 0) {
     bouton_prece.style.visibility = "hidden";
+  } else if (questionAct >= 1) {
+    bouton_prece.style.visibility = "visible";
   }
-  bouton_suivant.addEventListener("click", function () {
-    i++;
-    document.getElementById("question").innerText = Question[i][0];
-    // document.querySelectorAll("span").forEach((element, index) => {
-    //   element.innerText += Question[i][index + 1];
-    // });
+  bouton_suivant.addEventListener("click", () => {
+    questionAct++;
+
+    document.getElementById("question").innerText = Question[questionAct][0];
+    document.querySelectorAll("span").forEach((element, index) => {
+      element.innerText = Question[questionAct][index + 1];
+    });
   });
 }
+function bonneRep() {}
+
+myfunction();
