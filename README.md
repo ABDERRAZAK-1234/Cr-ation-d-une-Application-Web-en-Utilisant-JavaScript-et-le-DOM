@@ -2,4 +2,4 @@ link Jira : https://aamaichabderrazak20.atlassian.net/jira/software/projects/QUI
 
 link Figma : https://www.figma.com/design/Q58v2UdtaZEZCPCnnENCTd/Untitled?node-id=0-1&t=DoGVtEBCRmUfkbOs-1
 
-link cnva : 
+link cnva : https://www.canva.com/design/DAG3kVWnrW4/uMHZUgNTJRWFPgn_0dDUCw/edit?utm_content=DAG3kVWnrW4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
